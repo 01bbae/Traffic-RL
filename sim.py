@@ -33,7 +33,7 @@ class TrafficEnv(Env):
         # 2 we left turn
         # 3 we straight
         self.action_space = Discrete(4)
-        # ??? dont know if this is right to put as an observation space
+        # dont know if this is right to put as an observation space
         self.observation_space = self.lanes
         # self.state
         for r in range(self.numlanes):
@@ -64,7 +64,7 @@ class TrafficEnv(Env):
         else:
             done = False
 
-        # add randomness?
+        # add randomness? stochasticity
 
         # placeholder for step information
         info = {}
